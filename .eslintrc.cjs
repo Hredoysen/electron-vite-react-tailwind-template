@@ -1,0 +1,26 @@
+module.exports = {
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  plugins: ['react-refresh'],
+  rules: {
+    'react-refresh/only-export-components': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'import/extensions': 0,
+    'import/no-extraneous-dependencies': 'off',
+    'no-param-reassign ': 'off',
+    'react/button-has-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
+    'no-param-reassign': 'off',
+    'import/no-cycle': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+  },
+}
